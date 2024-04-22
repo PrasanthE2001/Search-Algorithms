@@ -19,13 +19,51 @@ To write a program to perform linear search and binary search using python progr
 ## Program:
 i)	#Use a linear search method to match the item in a list.
 ```
+#developed by : E Prasanth
+#reg no : 212221233002
+
+def linearSearch(array,n,k):
+ for i in range(0,n):
+     if(array[i]==k):
+        return i
+ 1/5
+ return -1
+    
+array = eval(input())
+k=eval(input())
+n=len(array)
+array.sort()
+res=linearSearch(array,n,k)
+if(res==-1):
+    print(array)
+    print("Element not found")
+else:
+    print(array)
+    print("Element found at index: ",  res)
 
 
 
 ```
 ii)	# Find the element in a list using Binary Search(Iterative Method).
 ```
-
+def linearSearch(array,n,k):
+ for i in range(0,n):
+     if(array[i]==k):
+        return i
+ 1/5
+ return -1
+    
+array = eval(input())
+k=eval(input())
+n=len(array)
+array.sort()
+res=linearSearch(array,n,k)
+if(res==-1):
+    print(array)
+    print("Element not found")
+else:
+    print(array)
+    print("Element found at index: ",  res)
 
 
 
@@ -33,6 +71,27 @@ ii)	# Find the element in a list using Binary Search(Iterative Method).
 ```
 iii)	# Find the element in a list using Binary Search (recursive Method).
 ```
+def binary(lst , n, low, high):
+    if low<=high:
+        mid = low+ (high -low)//2
+        if lst[mid]==n:
+            return mid
+        elif lst[mid]>n:
+            return binary(lst , n, low, mid-1)
+        else:
+             return binary(lst , n , mid+1, high)
+    else:
+        return -1
+lst = eval(input())
+lst.sort()
+n=eval(input())
+result = binary(lst,n,0,len(lst)-1)
+if(result==-1):
+    print(lst)
+    print("Element not found")
+else:
+    print(lst)
+    print("Element found at index: " , result)
 
 
 
@@ -40,6 +99,9 @@ iii)	# Find the element in a list using Binary Search (recursive Method).
 
 ```
 ## Sample Input and Output
+![Screenshot (8)](https://github.com/PrasanthE2001/Search-Algorithms/assets/114572171/f74aad90-4e99-4da1-a21d-4d688d6e9a5b)
+![Screenshot (9)](https://github.com/PrasanthE2001/Search-Algorithms/assets/114572171/293e7019-894c-4457-ae60-c124b23a06ea)
+![Screenshot (10)](https://github.com/PrasanthE2001/Search-Algorithms/assets/114572171/a9700aa7-31aa-473c-ad14-3f9881a188cb)
 
 
 
